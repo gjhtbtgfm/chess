@@ -1,54 +1,7 @@
 <!DOCTYPE HTML>
 <html lang = "en">
 	<head>
-		<style>
-			.drop_space{
-				width: 100px;
-				height: 100px;
-				padding: 0px;
-				margin: 0px;
-				border: 1px solid #aaaaaa;
-			}
-			.light_space{
-				background-color: #37ff80;
-			}
-			.dark_space{
-				background-color: #13572c;
-			}
-			.board{
-				width: 220px;
-				height: 220px;
-				margin: 0.5em;
-				border: 2px solid #808080;
-			}
-			.board div{
-				float: left;
-				width: 100px;
-				height: 100px;
-
-			}
-
-			.board  #spot1{
-				grid-column: 1;
-				grid-row: 1;
-			}
-			.board  #spot2{
-				grid-column: 1;
-				grid-row: 2;
-			}
-			.board  #spot3{
-				grid-column: 2;
-				grid-row: 1;
-			}
-			.board  #spot4{
-				grid-column: 2;
-				grid-row: 2;
-			}
-
-			body {background-color: white;}
-			p {color: magenta;}
-		</style>
-
+		<Link rel="stylesheet" type="text/css" href="board.css">
 	 <title> Drag And Drop Prototype </title>
 		<script>
 			function allowDrop(ev){
@@ -69,13 +22,97 @@
 	</head>
 	<body>
 		<div class="board">
+
+			<table>
+				<tr>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"><img src="pawn.png"  alt="p" id="pawn_kr" style="color: red" draggable=true ondragstart="drag(event)"  width="35" height="35"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"><img src="pawn.png"  alt="p" id="pawn_kr" style="color: red" draggable=true ondragstart="drag(event)"  width="35" height="35"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"><img src="pawn.png"  alt="p" id="pawn_kr" style="color: red" draggable=true ondragstart="drag(event)"  width="35" height="35"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"><img src="pawn.png"  alt="p" id="pawn_kr" style="color: red" draggable=true ondragstart="drag(event)"  width="35" height="35"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"><img src="pawn.png"  alt="p" id="pawn_kr" style="color: red" draggable=true ondragstart="drag(event)"  width="35" height="35"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"><img src="pawn.png"  alt="p" id="pawn_kr" style="color: red" draggable=true ondragstart="drag(event)"  width="35" height="35"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"><img src="pawn.png"  alt="p" id="pawn_kr" style="color: red" draggable=true ondragstart="drag(event)"  width="35" height="35"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"><img src="pawn.png"  alt="p" id="pawn_kr" style="color: red" draggable=true ondragstart="drag(event)"  width="35" height="35"></td>
+				</tr>
+				<tr>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+				<tr>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+				<tr>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+				<tr>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+				<tr>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+				<tr>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+				<tr>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+					<td  ondrop ="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+
+			<!-- 
 			<div class="drop_space dark_space"  id="spot1" ondrop ="drop(event)" ondragover="allowDrop(event)"> 
 				<img src="pawn.png"  alt="p" id="pawn_kr" style="color: red" draggable=true ondragstart="drag(event)" width="100" height="100">
 			</div>
 			<div class="drop_space light_space"  id="spot2" ondrop ="drop(event)" ondragover="allowDrop(event)"> </div>
 			<div class="drop_space light_space"  id="spot3" ondrop ="drop(event)" ondragover="allowDrop(event)"> </div>
-			<div class="drop_space dark_space"  id="spot4" ondrop ="drop(event)" ondragover="allowDrop(event)"> </div>
-	
-		</section>
+			<div class="drop_space dark_space"  id="spot4" ondrop ="drop(event)" ondragover="allowDrop(event)"> </div> -->
+			</table>
+		<!-- </section> -->
 	</body>
 </html>
